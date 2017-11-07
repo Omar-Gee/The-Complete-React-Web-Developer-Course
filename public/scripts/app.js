@@ -29,6 +29,21 @@ var IndecisionApp = function (_React$Component) {
   }
 
   _createClass(IndecisionApp, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      console.log('fetching data');
+    }
+  }, {
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate(prevProps, prevState) {
+      console.log('saving data');
+    }
+  }, {
+    key: 'componentWilUnmount',
+    value: function componentWilUnmount() {
+      console.log('componentDidUnmount');
+    }
+  }, {
     key: 'handleDeleteOptions',
     value: function handleDeleteOptions() {
       this.setState(function () {
@@ -233,3 +248,5 @@ var AddOption = function (_React$Component2) {
 // };
 
 ReactDOM.render(React.createElement(IndecisionApp, null), document.getElementById('app'));
+
+// babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
