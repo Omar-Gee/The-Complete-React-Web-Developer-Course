@@ -1,14 +1,8 @@
-// import './utils.js';
-// import subtract, { square, add } from './utils.js';
+import validator from 'validator';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
+const template = React.createElement('p', {},'testing 123');
+ReactDOM.render(template, document.getElementById('app'));
 
-// console.log('app.js is running!');
-
-// console.log(square(4));
-// console.log(add(4, 7));
-// console.log(subtract(9,7))
-
-import isSenior, { isAdult, canDrink} from './person.js';
-console.log(canDrink(26));
-console.log(isAdult(5));
-console.log(isSenior(65));
+console.log(validator.isEmail('test@test.test'));
