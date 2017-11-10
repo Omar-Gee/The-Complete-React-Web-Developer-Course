@@ -13,7 +13,10 @@ module.exports = {
 			exclude: /node_modules/
 		}]
 	},
-	devtool: 'cheap-module-eval-sorce-map'
+	devtool: 'cheap-module-eval-sorce-map',
+	devServer: {
+		contentBase: path.join(__dirname, "public")
+	}
 };
 
 // loader
